@@ -28,13 +28,15 @@ This project was built with teamwork and version control by the following member
 - **JavaScript**
 
 ## 📂 Project Structure
+```
 LSPP-TeamPortfolio/
 │
-├── index.html # Main entry point of the website
-├── static/ # Stylesheets and assets
-├── scripts/ # JavaScript files
-├── team/ # Individual member sections
-└── README.md # Project documentation
+├── index.html         # Main entry point of the website
+├── static/            # Stylesheets and assets
+├── scripts/           # JavaScript files
+├── team/              # Individual member sections
+└── README.md          # Project documentation
+```
 
 
 ## 📌 Purpose

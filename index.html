@@ -1,66 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>untitled.jpg | Team Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="static/styles/main.css">
-</head>
-<body class="bg-[#1e1233] text-gray-800">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>untitled.jpg | Team Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="static/styles/main.css" />
+  </head>
+  <body class="bg-[#1e1233] text-gray-800">
+    <!-- Header -->
+    <header
+      class="flex items-center justify-center px-6 py-4 bg-gray-900 shadow-lg shadow-pink-400"
+    >
+      <div class="flex items-center gap-4">
+        <img
+          src="Static/images/untitled-white.svg"
+          alt="Team Logo"
+          class="h-12 w-12 rounded-full"
+        />
+        <h1 class="text-4xl font-bold text-center text-pink-200">
+          untitled.jpg
+        </h1>
+      </div>
+    </header>
 
-  <!-- Header -->
-  <header class="flex items-center justify-center px-6 py-4 bg-gray-900 shadow-lg shadow-pink-400">
-    <div class="flex items-center gap-4">
-      <img src="Static/images/untitled-white.svg" alt="Team Logo" class="h-12 w-12 rounded-full">
-      <h1 class="text-4xl font-bold text-center text-pink-200">untitled.jpg</h1>
-    </div>
-  </header>
+    <!-- Project Description -->
+    <section class="px-6 py-6 max-w-4xl mx-auto text-center">
+      <div class="py=3">
+        <h2 class="text-2xl font-semibold mb-2 text-pink-200">
+          About the Project
+        </h2>
+        <div
+          class="w-16 h-1 bg-pink-400 mx-auto rounded-full text-slide-in"
+          id="tech-underline"
+        ></div>
+      </div>
 
-  <!-- Project Description -->
-  <section class="px-6 py-6 max-w-4xl mx-auto text-center">
-    <div class="py=3">
-      <h2 class="text-2xl font-semibold mb-2 text-pink-200">About the Project</h2>
-      <div class="w-16 h-1 bg-pink-400 mx-auto rounded-full text-slide-in" id="tech-underline"></div>
-    </div>
-    
-    <p class="text-gray-300 py-2">
-      We are a team of curious learners building a team portfolio to showcase our interests, skills, and collaborative efforts. 
-      This page introduces each member, shares our learning goals, and highlights the tools we've used. <br>
-      Our aim is to create a space where we can learn, grow, and share our journey with others.
-    </p>
-  </section>
+      <p class="text-gray-300 py-2">
+        We are a team of curious learners building a team portfolio to showcase
+        our interests, skills, and collaborative efforts. This page introduces
+        each member, shares our learning goals, and highlights the tools we've
+        used. <br />
+        Our aim is to create a space where we can learn, grow, and share our
+        journey with others.
+      </p>
+    </section>
 
-  <!-- Team Carousel -->
-  <section class="px-6 py-3">
-    <div class="py-3">
-      <h2 class="text-2xl font-semibold text-center mb-4 text-pink-200">Meet the Team</h2>
-    <div class="w-16 h-1 bg-pink-400 mx-auto rounded-full text-slide-in" id="tech-underline"></div>
-    </div>
-    
+    <!-- Team Carousel -->
+    <section class="px-6 py-3">
+      <div class="py-3">
+        <h2 class="text-2xl font-semibold text-center mb-4 text-pink-200">
+          Meet the Team
+        </h2>
+        <div
+          class="w-16 h-1 bg-pink-400 mx-auto rounded-full text-slide-in"
+          id="tech-underline"
+        ></div>
+      </div>
+
       <!-- <div class="flex gap-6 w-max"> -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 px-3 py-3">
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 px-3 py-3"
+      >
         <!-- Member 1 -->
-        <a href="team/member1.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
-          <img src="static/images/members/member11.png" alt="Member 1" class="h-40 w-40 rounded-full mx-auto object-cover">
-          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">Adarsha Shrestha</h3>
-          <p class="text-sm text-center text-gray-500 mt-1">Loves Python & Pizza 🍕</p>
+        <a
+          href="team/member1.html"
+          class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition"
+        >
+          <img
+            src="static/images/members/member11.png"
+            alt="Member 1"
+            class="h-40 w-40 rounded-full mx-auto object-cover"
+          />
+          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">
+            Adarsha Shrestha
+          </h3>
+          <p class="text-sm text-center text-gray-500 mt-1">
+            Loves Python & Pizza 🍕
+          </p>
         </a>
 
         <!-- Member 2 -->
-        <a href="team/member2.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
-          <img src="Static/untitled-white.svg" alt="Member 2" class="h-40 w-40 rounded-full mx-auto object-cover">
-          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">Member 2</h3>
-          <p class="text-sm text-center text-gray-500 mt-1">Frontend Wizard ✨</p>
+        <a
+          href="team/member2.html"
+          class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition"
+        >
+          <img
+            src="Static/untitled-white.svg"
+            alt="Member 2"
+            class="h-40 w-40 rounded-full mx-auto object-cover"
+          />
+          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">
+            Member 2
+          </h3>
+          <p class="text-sm text-center text-gray-500 mt-1">
+            Frontend Wizard ✨
+          </p>
         </a>
 
         <!-- Member 3 -->
-        <a href="member3.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
-          <img src="members/member2.jpg" alt="Member 2" class="h-40 w-40 rounded-full mx-auto object-cover">
-          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">Member 3</h3>
-          <p class="text-sm text-center text-gray-500 mt-1">Frontend Wizard ✨</p>
+        <a
+          href="member3.html"
+          class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition"
+        >
+          <img
+            src="members/member2.jpg"
+            alt="Member 2"
+            class="h-40 w-40 rounded-full mx-auto object-cover"
+          />
+          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">
+            Member 3
+          </h3>
+          <p class="text-sm text-center text-gray-500 mt-1">
+            Frontend Wizard ✨
+          </p>
         </a>
-        
+
         <!--Member 4-->
         <a href="team/member4.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
           <img src="static/images/members/member4.jpg" alt="Member 2" class="h-40 w-40 rounded-full mx-auto object-cover">
@@ -69,67 +124,149 @@
         </a>
 
         <!--Member 5-->
-        <a href="member5.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
-          <img src="members/member2.jpg" alt="Member 2" class="h-40 w-40 rounded-full mx-auto object-cover">
-          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">Member 5</h3>
-          <p class="text-sm text-center text-gray-500 mt-1">Frontend Wizard ✨</p>
+        <a
+          href="team/member5.html"
+          class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition"
+        >
+          <img
+            src="static/images/members/member5.png"
+            alt="Member 2"
+            class="h-40 w-40 rounded-full mx-auto object-cover"
+          />
+          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">
+            Member 5
+          </h3>
+          <p class="text-sm text-center text-gray-500 mt-1">
+            Frontend Wizard ✨
+          </p>
         </a>
 
         <!--Member 6-->
-        <a href="member6.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
-          <img src="members/member2.jpg" alt="Member 2" class="h-40 w-40 rounded-full mx-auto object-cover">
-          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">Member 6</h3>
-          <p class="text-sm text-center text-gray-500 mt-1">Frontend Wizard ✨</p>
+        <a href="team/member6.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
+          <img src="static/images/members/member6.png" alt="Member 6" class="h-40 w-40 rounded-full mx-auto object-cover">
+          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">Trisan Wagle</h3>
+          <p class="text-sm text-center text-gray-500 mt-1">Loves software dev, & learning data ✨</p>
         </a>
 
         <!--Member 7-->
-        <a href="member7.html" class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition">
-          <img src="members/member2.jpg" alt="Member 2" class="h-40 w-40 rounded-full mx-auto object-cover">
-          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">Member 7</h3>
-          <p class="text-sm text-center text-gray-500 mt-1">Frontend Wizard ✨</p>
+        <a
+          href="team/member7.html"
+          class="bg-gray-900 rounded-xl p-4 w-90 hover:shadow-[0_4px_20px_rgba(244,114,182,0.5)] transition"
+        >
+          <img
+            src="members/member2.jpg"
+            alt="Member 2"
+            class="h-40 w-40 rounded-full mx-auto object-cover"
+          />
+          <h3 class="mt-4 text-lg font-bold text-center text-pink-200">
+            Member 7
+          </h3>
+          <p class="text-sm text-center text-gray-500 mt-1">
+            Frontend Wizard ✨
+          </p>
         </a>
-
       </div>
-  </section>
-  
-  <section class="px-6 py-12">
-    <div class="max-w-4xl mx-auto">
-      <!-- Title Section -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-semibold mb-4 text-pink-200">Tools Used</h2>
-        <div class="w-16 h-1 bg-pink-400 mx-auto rounded-full"></div>
-      </div>
-      
-      <!-- Tools Grid -->
-      <div class="flex justify-center">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl">
-          <div class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="JavaScript" />
-          </div>
-          
-          <div class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="HTML5" />
-          </div>
-          
-          <div class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg) brightness(1.2);" alt="CSS3" />
-          </div>
+    </section>
 
-          <div class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg) brightness(1.2);" alt="Tailwind CSS" />
-          </div>
-          
-          <div class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg) brightness(1.2);" alt="React" />
-          </div>
-          
-          <div class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" class="w-12 h-12 group-hover:scale-110 transition-transform duration-300" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(85deg) brightness(1.2);" alt="Node.js" />
+    <section class="px-6 py-12">
+      <div class="max-w-4xl mx-auto">
+        <!-- Title Section -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-semibold mb-4 text-pink-200">Tools Used</h2>
+          <div class="w-16 h-1 bg-pink-400 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="flex justify-center">
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-6xl"
+          >
+            <div
+              class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg"
+                class="w-12 h-12 group-hover:scale-110 transition-transform duration-300"
+                style="
+                  filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg)
+                    brightness(1.2);
+                "
+                alt="JavaScript"
+              />
+            </div>
+
+            <div
+              class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg"
+                class="w-12 h-12 group-hover:scale-110 transition-transform duration-300"
+                style="
+                  filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg)
+                    brightness(1.2);
+                "
+                alt="HTML5"
+              />
+            </div>
+
+            <div
+              class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg"
+                class="w-12 h-12 group-hover:scale-110 transition-transform duration-300"
+                style="
+                  filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg)
+                    brightness(1.2);
+                "
+                alt="CSS3"
+              />
+            </div>
+
+            <div
+              class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg"
+                class="w-12 h-12 group-hover:scale-110 transition-transform duration-300"
+                style="
+                  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg)
+                    brightness(1.2);
+                "
+                alt="Tailwind CSS"
+              />
+            </div>
+
+            <div
+              class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg"
+                class="w-12 h-12 group-hover:scale-110 transition-transform duration-300"
+                style="
+                  filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg)
+                    brightness(1.2);
+                "
+                alt="React"
+              />
+            </div>
+
+            <div
+              class="tech-icon w-24 h-24 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-pink-400 transition-all duration-300 hover:scale-110 transform group"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg"
+                class="w-12 h-12 group-hover:scale-110 transition-transform duration-300"
+                style="
+                  filter: invert(1) sepia(1) saturate(5) hue-rotate(85deg)
+                    brightness(1.2);
+                "
+                alt="Node.js"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-</body>
+    </section>
+  </body>
 </html>

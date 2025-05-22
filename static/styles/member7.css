@@ -1,0 +1,83 @@
+/* Custom styles for member7 portfolio page */
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2a1850 60%, #3a1d5c 100%);
+  min-height: 100vh;
+}
+
+header {
+  box-shadow: 0 4px 24px 0 rgba(244,114,182,0.25);
+}
+
+.bg-gray-900 {
+  background: linear-gradient(120deg, #2a1850 80%, #3a1d5c 100%);
+}
+
+/* Hero background image blend */
+body > .absolute img {
+  filter: brightness(1.08) saturate(1.1);
+  opacity: 0.80;
+  mix-blend-mode: lighten;
+  transition: filter 0.3s;
+}
+
+body > .absolute .bg-gradient-to-b {
+  pointer-events: none;
+}
+
+/* Profile image styling */
+main img[alt="Yurisha Bajracharya"] {
+  border: none !important;
+  background: rgba(42,24,80,0.6);
+  box-shadow: 0 8px 48px 0 rgba(244,114,182,0.18);
+  transition: transform 0.3s;
+}
+main img[alt="Yurisha Bajracharya"]:hover {
+  transform: scale(1.04) rotate(-2deg);
+}
+
+/* Verification badge */
+.verified-badge {
+  background: #f472b6;
+  color: #fff;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.2em 0.8em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  box-shadow: 0 2px 8px 0 rgba(244, 114, 182, 0.15);
+}
+.verified-badge svg {
+  color: #fff;
+}
+
+/* Card and section tweaks */
+.bg-custom-dark {
+  background: rgba(37, 23, 58, 0.93) !important;
+}
+
+section h2 {
+  letter-spacing: 0.02em;
+}
+
+ul li {
+  transition: background 0.2s, color 0.2s;
+}
+ul li:hover {
+  background: #f472b6;
+  color: #2a1850;
+}
+
+footer {
+  border-top: 1px solid #2a1850;
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  .p-10 { padding: 1.2rem !important; }
+  .max-w-4xl { max-width: 99vw !important; }
+  main img[alt="Yurisha Bajracharya"] { width: 60vw !important; height: 60vw !important; }
+}

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trisan Wagle | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e40af',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        html {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .bg-gradient {
+            background: linear-gradient(90deg, #3b82f6 0%, #1e40af 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(90deg, #3b82f6 0%, #1e40af 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gradient">TW</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                <a href="#education" class="hover:text-primary transition-colors">Education</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden text-dark text-xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#about" class="hover:text-primary transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+                <a href="#skills" class="hover:text-primary transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a>
+                <a href="#experience" class="hover:text-primary transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Experience</a>
+                <a href="#projects" class="hover:text-primary transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a>
+                <a href="#education" class="hover:text-primary transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Education</a>
+                <a href="#contact" class="hover:text-primary transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-gradient">Trisan Wagle</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Software Developer (Web)</h2>
+                    <p class="text-lg mb-8 text-gray-700 max-w-lg">Passionate about building modern web applications with expertise in frontend and backend technologies.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-gradient text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">Contact Me</a>
+                        <a href="#projects" class="border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors">View Projects</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary">
+                            <img src="../static/images/members/member6.png" alt="Trisan Wagle" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-full shadow-lg">
+                            <div class="bg-gradient w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">About <span class="text-gradient">Me</span></h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-gray-700 mb-6">
+                    I'm a Software Engineer with experience in both frontend and backend development. Currently, I'm expanding my skills in Data Science and AI while building modern web applications using the latest technologies.
+                </p>
+                <p class="text-lg text-gray-700 mb-6">
+                    With a strong foundation in JavaScript, TypeScript, React, and Node.js, I've worked on various projects ranging from banking applications to AI-integrated systems. I'm passionate about creating efficient, user-friendly applications and continuously learning new technologies.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a href="https://github.com/trishan9" target="_blank" class="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/trishan9" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:mailtotrishan@gmail.com" class="flex items-center gap-2 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="tel:+9779749419407" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors">
+                        <i class="fas fa-phone"></i> Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">My <span class="text-gradient">Skills</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Programming Languages -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-code text-primary mr-2"></i> Programming Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Go</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                    </div>
+                </div>
+                
+                <!-- Frontend -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-laptop-code text-primary mr-2"></i> Frontend
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">HTML & CSS</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">React.js</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Next.js</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Tailwind</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">SASS</span>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-server text-primary mr-2"></i> Backend
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Express.js</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Nest.js</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Gin (Go)</span>
+                    </div>
+                </div>
+                
+                <!-- Database & ORM -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-database text-primary mr-2"></i> Database & ORM
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Prisma</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Drizzle</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & Libraries -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-tools text-primary mr-2"></i> Tools & Libraries
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Git & GitHub</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">TRPC</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Redux</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">GraphQL</span>
+                    </div>
+                </div>
+                
+                <!-- Data Visualization -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fas fa-chart-bar text-primary mr-2"></i> Data Visualization
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">D3.js</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Chart.js</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">React-ChartJS</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm font-medium">Recharts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Work <span class="text-gradient">Experience</span></h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Line -->
+                    <div class="absolute left-0 md:left-1/2 h-full w-0.5 bg-primary transform -translate-x-1/2"></div>
+                    
+                    <!-- ecoBees -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
+                                <h3 class="text-xl font-bold">Software Engineer</h3>
+                                <p class="text-primary font-medium">ecoBees</p>
+                                <p class="text-gray-600">Nov 2022 – Aug 2024</p>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 w-10 h-10 bg-primary rounded-full transform -translate-x-1/2 flex items-center justify-center">
+                                <i class="fas fa-briefcase text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                    <li>Led development of in-house task logging system</li>
+                                    <li>Developed landing pages and dashboards for ChatGPT AI integrated applications</li>
+                                    <li>Implemented frontend with React, Next.js, TypeScript</li>
+                                    <li>Used React Query, GraphQL, Redux for state management</li>
+                                    <li>Worked on backend with Node, Express, Firebase, Prisma</li>
+                                    <li>Created data visualizations with D3.js, Chart.js</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Lanceme Up -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-1 md:order-1">
+                                <ul class="list-disc list-inside text-gray-700 space-y-2 md:text-right">
+                                    <li>Developed company's in-house SaaS Project Management Tool</li>
+                                    <li>Built Micro SaaS using TypeScript, Next.js, React, Tailwind</li>
+                                    <li>Implemented form handling with react-hook-form and zod</li>
+                                    <li>Used Driver.js for product tours, react-beautiful-dnd for drag and drop</li>
+                                    <li>Conducted code reviews before production deployment</li>
+                                </ul>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 w-10 h-10 bg-primary rounded-full transform -translate-x-1/2 flex items-center justify-center">
+                                <i class="fas fa-briefcase text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 order-2 md:order-2">
+                                <h3 class="text-xl font-bold">Frontend Developer</h3>
+                                <p class="text-primary font-medium">Lanceme Up</p>
+                                <p class="text-gray-600">Nov 2023 – Jan 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- InternSathi -->
+                    <div class="relative mb-16">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right">
+                                <h3 class="text-xl font-bold">Next.js Developer</h3>
+                                <p class="text-primary font-medium">InternSathi</p>
+                                <p class="text-gray-600">Jan 2023 – Sep 2023</p>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 w-10 h-10 bg-primary rounded-full transform -translate-x-1/2 flex items-center justify-center">
+                                <i class="fas fa-briefcase text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12">
+                                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                    <li>Worked as Frontend Developer specializing in Next.js and React</li>
+                                    <li>Reviewed applications and interviewed 100+ Frontend Developer candidates</li>
+                                    <li>Used tanstack query, apollo, graphql, recoil, zustand for state management</li>
+                                    <li>Led daily scrum meetings and participated in sprint planning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ecoBees Internship -->
+                    <div class="relative">
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-1 md:order-1">
+                                <ul class="list-disc list-inside text-gray-700 space-y-2 md:text-right">
+                                    <li>Worked with HTML, CSS, JavaScript, SASS, React.js, Tailwind</li>
+                                    <li>Learned project setup, Agile, Scrum, version control</li>
+                                    <li>Participated in PR reviews and received feedback</li>
+                                </ul>
+                            </div>
+                            <div class="absolute left-0 md:left-1/2 w-10 h-10 bg-primary rounded-full transform -translate-x-1/2 flex items-center justify-center">
+                                <i class="fas fa-briefcase text-white"></i>
+                            </div>
+                            <div class="md:w-1/2 md:pl-12 order-2 md:order-2">
+                                <h3 class="text-xl font-bold">Software Engineer Internship</h3>
+                                <p class="text-primary font-medium">ecoBees</p>
+                                <p class="text-gray-600">Sep 2022 – Nov 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Featured <span class="text-gradient">Projects</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Modern Gallery -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-images text-5xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Modern Gallery</h3>
+                        <p class="text-gray-700 mb-4">Production-grade full-stack modern gallery built with T3 Stack, Next14, Zustand, Drizzle, Clerk, ShadCN, UploadThing, Sentry, Posthog, Upstash, Server Actions.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Next.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">T3 Stack</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Zustand</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Drizzle</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- FHIR Data Visualization -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-5xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">FHIR Data Visualization</h3>
+                        <p class="text-gray-700 mb-4">A web application for visualizing US Healthcare Sector data using the FHIR Standard, created with Express, Next.js, D3.js, MySQL, Prisma, ShadCN, Tailwind.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">D3.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Next.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Express</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">MySQL</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- create-express-app-trishan -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-terminal text-5xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">create-express-app-trishan</h3>
+                        <p class="text-gray-700 mb-4">Created and published this npm package which is a CLI tool that enables users to quickly start building a new Express.js server, with everything set up.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Node.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Express</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">CLI</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">npm</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- AI-Object-Detection -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-camera text-5xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI-Object-Detection</h3>
+                        <p class="text-gray-700 mb-4">Created using Next.js leveraging TensorFlow Coco SSD model for real-time object recognition through webcam input.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Next.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">TensorFlow</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">AI</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Computer Vision</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Vidyalaya -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-5xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Vidyalaya</h3>
+                        <p class="text-gray-700 mb-4">A LMS (Learning Management System) like Udemy/LinkedIn learning using Next14, Prisma, Mux, Stripe, Clerk, ShadCN, UploadThing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Next.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Prisma</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Stripe</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Clerk</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- HTML-2-PDF-Converter -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-file-pdf text-5xl text-gray-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">HTML-2-PDF-Converter</h3>
+                        <p class="text-gray-700 mb-4">ExpressJS Application which accepts HTML files, and sends a converted PDF to a given email address.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Express.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Node.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">PDF</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded-md text-xs">Email</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/trishan9" target="_blank" class="inline-flex items-center gap-2 bg-gradient text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                    <i class="fab fa-github"></i> View More Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center"><span class="text-gradient">Education</span></h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Softwarica College -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow mb-8">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/4 flex justify-center items-center">
+                            <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl">
+                                <i class="fas fa-university"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-xl font-bold">Bsc. (Hons) Computing</h3>
+                            <p class="text-primary font-medium">Softwarica College of IT & E-commerce (Coventry University)</p>
+                            <p class="text-gray-600 mb-4">Expected Graduation, Sep 2026</p>
+                            <p class="text-gray-700">
+                                Studying Programming, Discrete Mathematics, Software Design and Development, Networking and Architecture, OOP, Data Structures and Algorithms, Team Projects, Entrepreneurship, IoT, Data Science, Security, Research, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sigma College -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="md:w-1/4 flex justify-center items-center">
+                            <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-3xl">
+                                <i class="fas fa-school"></i>
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h3 class="text-xl font-bold">+2 High School (Management with Computer Science)</h3>
+                            <p class="text-primary font-medium">Sigma College</p>
+                            <p class="text-gray-600 mb-4">Completed, May 2023</p>
+                            <p class="text-gray-700">
+                                Studied Accounting, Economics, Mathematics, Computer Science, English, Nepali.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Certifications & <span class="text-gradient">Activities</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Certificates -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-certificate text-primary mr-2"></i> Certificates
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-award text-primary mt-1"></i>
+                            <div>
+                                <p class="font-medium">Intermediate JavaScript Certificate</p>
+                                <p class="text-gray-600 text-sm">HackerRank</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-award text-primary mt-1"></i>
+                            <div>
+                                <p class="font-medium">Advanced JavaScript Certificate</p>
+                                <p class="text-gray-600 text-sm">UpGrad</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-award text-primary mt-1"></i>
+                            <div>
+                                <p class="font-medium">The Complete Web Development Bootcamp Certificate</p>
+                                <p class="text-gray-600 text-sm">Udemy</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Activities -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center">
+                        <i class="fas fa-trophy text-primary mr-2"></i> Activities & Achievements
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-medal text-primary mt-1"></i>
+                            <div>
+                                <p class="font-medium">Frogtoberfest 2023</p>
+                                <p class="text-gray-700 text-sm">Ended up in #7 Position in Frogtoberfest organized by Leapfrog Technology.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-medal text-primary mt-1"></i>
+                            <div>
+                                <p class="font-medium">KIST Hackfest 2024</p>
+                                <p class="text-gray-700 text-sm">Secured #2 position in a 48-hour hackathon: KIST Hackfest organized by KIST College.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-medal text-primary mt-1"></i>
+                            <div>
+                                <p class="font-medium">Coding Clash Competition</p>
+                                <p class="text-gray-700 text-sm">Secured the first position in the Coding Clash organized by the IT and Editorial Club of Softwarica.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Get In <span class="text-gradient">Touch</span></h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Contact Info -->
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">Email</p>
+                                    <p class="font-medium">mailtotrishan@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">Phone</p>
+                                    <p class="font-medium">+977-9749419407</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">GitHub</p>
+                                    <p class="font-medium">github.com/trishan9</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">LinkedIn</p>
+                                    <p class="font-medium">linkedin.com/in/trishan9</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-6">Send a Message</h3>
+                        
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-gradient text-white py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-2">Trisan Wagle</h2>
+                    <p class="text-gray-400">Software Developer (Web)</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://github.com/trishan9" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/trishan9" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="mailto:mailtotrishan@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="tel:+9779749419407" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Trishan Wagle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

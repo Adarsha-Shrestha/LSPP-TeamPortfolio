@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishav Upadhaya | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="preload"
+      as="image"
+      href="../static/images/members/member4.jpg"
+    />
+    <link rel="stylesheet" href="../static/styles/member4.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity 0.8s;
+      }
+      body.loaded {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-label="Intro">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            Hey There,<br />I'm <span class="highlight">Rishav Upadhaya</span>!
+          </h1>
+          <p class="subtitle">Full Stack Developer and AI Enthusiast</p>
+          <div class="social-icons">
+            <a
+              href="mailto:rishavupadhaya266@gmail.com"
+              title="Email"
+              aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rishav-upadhaya/"
+              target="_blank"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/Rishav-Upadhaya"
+              target="_blank"
+              title="GitHub"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.rishavupadhaya.com.np/"
+              target="_blank"
+              title="Website"
+              aria-label="Website"
+              ><i class="fas fa-globe"></i
+            ></a>
+          </div>
+          <a href="https://www.rishavupadhaya.com.np/#projects" class="cta-btn"
+            >View My Work</a
+          >
+        </div>
+        <div class="hero-right">
+          <div class="profile-container">
+            <img
+              src="../static/images/members/member4.jpg"
+              alt="Rishav Upadhaya portrait"
+              class="profile-img"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => document.body.classList.add("loaded"), 100);
+      });
+    </script>
+  </body>
+</html>

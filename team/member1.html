@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsha's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../scripts/member1.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <link href="../static/styles/member1.css" rel="stylesheet">
+</head>
+<body class="bg-[#1e1233] text-white h-screen">
+      
+    
+
+  <div class="flex md:flex-row items-center justify-center h-screen w-full px-6 z-10">
+
+    <!-- <div class="flex items-center justify-center min-h-screen bg-gray-900">
+        <img src="Static/Adarsha Shrestha.png" alt="Portrait" class="w-72 object-contain" />
+      </div> -->
+
+    <div class="w-full h-screen flex flex-col md:flex-row items-center justify-between gap-8" style="max-width: 99rem;">
+
+      <!-- Left Section -->
+      <div class="text-left w-[30rem]">
+        <div class="relative w-full flex flex-col items-start">
+            <!-- Background blur blob -->
+            <div class="absolute inset-0 w-72 h-72 bg-pink-400 rounded-full opacity-60 blur-3xl -z-10"></div>
+            <!-- Text on top -->
+            <h2 class="text-4xl sm:text-6xl font-bold mb-0 text-pink-200 text-slide-in" id="greeting">Hey There,</h2>
+            <h1 class="text-5xl sm:text-7xl font-bold mb-4 text-white text-slide-in" id="name">I'm Adarsha!</h1>
+          </div>
+
+        <div class="text-lg mt-14">
+          <!-- <p class="font-semibold text-gray-300">Top Rated Designer</p>
+          <p class="text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+          <h3 class="text-2xl font-semibold text-slide-in" id="title">Curious Coder & Culture Enthusiast</h3>
+          <p class="text-gray-300 mb-6 text-slide-in" id="subtitle">On a mission to blend AI with creativity—learning one model, one brushstroke, and one breakthrough at a time.</p>
+          
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-4 text-slide-in" id="badges">
+          <a href="https://www.instagram.com/aadarsha_shrestha/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" class="w-6 h-6 invert" alt="Figma" /></a>
+          <a href="https://www.linkedin.com/in/adarsha-shrestha-230b46181/"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" class="w-6 h-6 invert" alt="Dribbble" /></a>
+          <a href="https://x.com/Aadarsha_stha7"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/x.svg" class="w-6 h-6 invert" alt="Behance" /></a>
+        </div>
+      </div>
+
+      <!-- Portrait Section -->
+        <div class="relative w-[45rem] h-screen">
+            <img src="../static/images/members/member1.png" alt="Portrait of Adarsha" class="absolute inset-x-0 bottom-0 mx-auto w-[45rem] z-10">
+        </div>
+
+      <!-- Right Section -->
+      <div class="relative w-[30rem] flex flex-col items-center">
+        <div class="text-center mb-8">
+          <h3 class="text-3xl font-bold text-white mb-2 text-slide-in" id="tech-title">Tools Used</h3>
+          <div class="w-16 h-1 bg-pink-400 mx-auto rounded-full text-slide-in" id="tech-underline"></div>
+        </div>
+
+        <!-- 4x4 Grid of Tech Icons -->
+        <div class="grid grid-cols-4 gap-4 w-80">
+          <!-- Row 1 -->
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="JavaScript" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg) brightness(1.2);" alt="Tailwind CSS" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg) brightness(1.2);" alt="React" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nextdotjs.svg" class="w-8 h-8 invert" alt="Next.js" />
+          </div>
+          
+          <!-- Row 2 -->
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg) brightness(1.2);" alt="Docker" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pytorch.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg) brightness(1.2);" alt="pytorch" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/fastapi.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="fastapi" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/supabase.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(85deg) brightness(1.2);" alt=".supabase" />
+          </div>
+          
+          <!-- Row 3 -->
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="docker" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(85deg) brightness(1.2);" alt="MongoDB" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg) brightness(1.2);" alt="PostgreSQL" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="Git" />
+          </div>
+          
+          <!-- Row 4 -->
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="Figma" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobephotoshop.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg) brightness(1.2);" alt="Photoshop" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/canva.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(200deg) brightness(1.2);" alt="canva" />
+          </div>
+          <div class="tech-icon w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 transition-colors duration-300 hover:scale-110 transform transition-transform">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg" class="w-8 h-8" style="filter: invert(1) sepia(1) saturate(5) hue-rotate(355deg) brightness(1.2);" alt="openai" />
+          </div>
+        </div>
+      </div>
+
+        
+      </div>
+    </div>
+  </div>
+  <!-- Background blob -->
+  <div class="blob absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-1"></div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+.text-slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.tech-icon {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  
+.blob {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: #ffc2d1;
+    border-radius: 50%;
+    filter: blur(5px);
+    animation: blobAnimation 15s infinite ease-in-out;
+    z-index: -5;
+}
+
+@keyframes blobAnimation {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    25% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    50% {
+        border-radius: 50% 60% 30% 60% / 40% 50% 60% 50%;
+    }
+    75% {
+        border-radius: 60% 40% 60% 30% / 30% 60% 40% 70%;
+    }
+}
+
